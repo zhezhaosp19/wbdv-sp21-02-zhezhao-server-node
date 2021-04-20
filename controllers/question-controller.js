@@ -14,7 +14,6 @@ module.exports = (app) => {
         // const questions = QuestionsService.findQuestionsForQuiz(quizId)
         QuestionsService.findQuestionsForQuiz(quizId)
             .then((questions) => {
-                res.json(questions)
                 console.log(questions)
             })
     }
