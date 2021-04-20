@@ -5,6 +5,7 @@ const findAllQuestions = () => {
     return questionsModel.find()
 }
 
+
 const findQuestionsById = (qId) => {
     return questionsModel.findById(qId)
 }

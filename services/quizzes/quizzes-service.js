@@ -16,7 +16,6 @@ const findQuizById = (quizId) => {
 }
 
 const createQuiz = () => {
-
 }
 const updateQuiz = () => {}
 

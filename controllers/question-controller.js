@@ -7,6 +7,7 @@ module.exports = (app) => {
             .then((questions) => {
                 res.json(questions);
             })
+
     }
 
     const findQuestionsForQuiz = (req, res) => {
@@ -26,6 +27,7 @@ module.exports = (app) => {
                 res.json(question)
             })
     }
+
 
     app.get('/api/quizzes/:qid/questions', findQuestionsForQuiz)
     app.get('/api/questions', findALlQuestion)

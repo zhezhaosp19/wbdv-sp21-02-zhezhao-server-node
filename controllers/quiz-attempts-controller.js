@@ -8,6 +8,7 @@ module.exports = (app) => {
             .then(attempt => res.send(attempt))
     }
 
+
     const findAttemptsForQuiz = (req, res) => {
         const quizId = req.params['qid']
         quizAttemptDao.findAttemptsForQuiz(quizId)

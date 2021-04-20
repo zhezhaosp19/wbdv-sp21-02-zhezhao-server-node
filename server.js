@@ -1,6 +1,8 @@
 const express = require('express')
 const app = express()
 
+const uri = process.env.MONGODB_URI
+
 const demo = require('./controllers/demos-controller')
 demo(app)
 
@@ -11,7 +13,7 @@ app.use(bodyParser.json())
 const mongoose = require('mongoose')
 mongoose.connect(
     // 'mongodb://localhost:27017/whiteboard-02',
-    process.env.MONGODB_URI,
+    uri,
     {useNewUrlParser: true, useUnifiedTopology: true})
 
 //Configures CORS

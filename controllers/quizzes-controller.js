@@ -13,6 +13,7 @@ module.exports = (app) => {
             })
     }
 
+
     const findQuizById = (req, res) => {
         const quizId = req.params['quizId']
         // const quiz = quizzesService.findQuizById(quizId)
