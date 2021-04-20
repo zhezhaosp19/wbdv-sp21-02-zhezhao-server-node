@@ -10,5 +10,4 @@ const questionsSchema = mongoose.Schema({
     choices: [String]
 }, {collection: "questions"})
 
-
 module.exports = questionsSchema
