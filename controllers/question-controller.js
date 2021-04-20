@@ -15,6 +15,7 @@ module.exports = (app) => {
         QuestionsService.findQuestionsForQuiz(quizId)
             .then((questions) => {
                 console.log(questions)
+                res.json(questions)
             })
     }
 
