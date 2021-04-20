@@ -10,8 +10,8 @@ app.use(bodyParser.json())
 
 const mongoose = require('mongoose')
 mongoose.connect(
-    // 'mongodb://localhost:27017/whiteboard-02',
-    process.env.MONGODB_URI,
+    'mongodb://localhost:27017/whiteboard-02',
+    // process.env.MONGODB_URI,
     {useNewUrlParser: true, useUnifiedTopology: true})
 
 //Configures CORS
